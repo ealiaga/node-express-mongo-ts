@@ -7,9 +7,9 @@
     "author": "",
     "license": "MIT",
     "scripts": {
-        "build": "./node_modules/.bin/webpack webpack.config.js",
-        "server": "tsc && npm run build && nodemon ./build/index.js",
-        "start": "node ./build/index.js",
+        "build": "tsc",
+        "server": "tsc && nodemon ./build/config/server/index.js",
+        "start": "node ./build/config/server/index.js",
         "ts:watch": "tsc -w",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
@@ -54,8 +54,6 @@
         "ts-loader": "5.3.1",
         "tslint": "5.8.0",
         "tslint-config-airbnb": "5.8.0",
-        "typescript": "2.6.2",
-        "webpack": "^4.29.6",
-        "webpack-cli": "^3.2.3"
+        "typescript": "2.6.2"
     }
 }
